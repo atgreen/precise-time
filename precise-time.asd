@@ -4,9 +4,9 @@
   :author "Yukari Hafner <shinmera@tymoon.eu>"
   :maintainer "Yukari Hafner <shinmera@tymoon.eu>"
   :description "Precise time measurements"
-  :homepage "https://shinmera.github.io/precise-time/"
-  :bug-tracker "https://github.com/shinmera/precise-time/issues"
-  :source-control (:git "https://github.com/shinmera/precise-time.git")
+  :homepage "https://shinmera.com/docs/precise-time/"
+  :bug-tracker "https://shinmera.com/project/precise-time/issues"
+  :source-control (:git "https://shinmera.com/project/precise-time.git")
   :serial T
   :components ((:file "package")
                (:file "protocol")
@@ -27,9 +27,9 @@
   :author "Yukari Hafner <shinmera@tymoon.eu>"
   :maintainer "Yukari Hafner <shinmera@tymoon.eu>"
   :description "Tests for the precise-time system."
-  :homepage "https://shinmera.github.io/precise-time/"
-  :bug-tracker "https://github.com/shinmera/precise-time/issues"
-  :source-control (:git "https://github.com/shinmera/precise-time.git")
+  :homepage "https://shinmera.com/docs/precise-time/"
+  :bug-tracker "https://shinmera.com/project/precise-time/issues"
+  :source-control (:git "https://shinmera.com/project/precise-time.git")
   :serial T
   :components ((:file "test"))
   :depends-on (:precise-time :parachute)
