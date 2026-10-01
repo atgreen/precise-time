@@ -10,16 +10,16 @@
   :serial T
   :components ((:file "package")
                (:file "protocol")
-               (:file "torcl" :if-feature :torcl)
-               (:file "posix" :if-feature (:and :unix (:not :darwin) (:not :torcl)))
-               (:file "darwin" :if-feature (:and :darwin (:not :torcl)))
-               (:file "windows" :if-feature (:and :windows (:not :torcl)))
+               (:file "egcl" :if-feature :egcl)
+               (:file "posix" :if-feature (:and :unix (:not :darwin) (:not :egcl)))
+               (:file "darwin" :if-feature (:and :darwin (:not :egcl)))
+               (:file "windows" :if-feature (:and :windows (:not :egcl)))
                (:file "mezzano" :if-feature :mezzano)
                (:file "nx" :if-feature :nx)
                (:file "documentation"))
   :defsystem-depends-on (:trivial-features)
   :depends-on (:documentation-utils
-               (:feature (:and (:not :mezzano) (:not :torcl)) :cffi))
+               (:feature (:and (:not :mezzano) (:not :egcl)) :cffi))
   :in-order-to ((asdf:test-op (asdf:test-op :precise-time/test))))
 
 (asdf:defsystem precise-time/test

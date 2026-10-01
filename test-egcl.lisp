@@ -1,8 +1,8 @@
-;;;; TorCL backend regression without the Parachute test dependency.
+;;;; EGCL backend regression without the Parachute test dependency.
 
 (in-package #:cl-user)
 
-(assert (member :torcl *features*))
+(assert (member :egcl *features*))
 (assert (null (find-package :cffi)))
 
 (asdf:load-system :precise-time :force t)
@@ -31,4 +31,4 @@
         (assert (< before after))
         (assert (< (- after before) 5000000000))))))
 
-(format t "TORCL-PRECISE-TIME-OK~%")
+(format t "EGCL-PRECISE-TIME-OK~%")
